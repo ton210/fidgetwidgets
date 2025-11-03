@@ -1,66 +1,9 @@
 <?php
 require_once 'config.php';
-$pageTitle = 'Products';
+require_once 'includes/products-data.php';
 
-// Product catalog
-$products = [
-    [
-        'id' => 1,
-        'name' => 'Spinner Grinder Pro',
-        'category' => 'grinder',
-        'price' => 29.99,
-        'description' => '4-piece aluminum grinder with fidget spinner top and magnetic closure'
-    ],
-    [
-        'id' => 2,
-        'name' => 'Widget Rolling Tray',
-        'category' => 'tray',
-        'price' => 24.99,
-        'description' => 'Large rolling tray with built-in storage compartments and non-slip surface'
-    ],
-    [
-        'id' => 3,
-        'name' => 'Airtight Storage Container',
-        'category' => 'storage',
-        'price' => 19.99,
-        'description' => 'Premium smell-proof container with humidity control'
-    ],
-    [
-        'id' => 4,
-        'name' => 'Fidget Papers',
-        'category' => 'rolling_papers',
-        'price' => 4.99,
-        'description' => 'Premium rolling papers with natural gum, 50 sheets per pack'
-    ],
-    [
-        'id' => 5,
-        'name' => 'Spinner Lighter',
-        'category' => 'lighter',
-        'price' => 9.99,
-        'description' => 'Refillable lighter with fidget spinner design'
-    ],
-    [
-        'id' => 6,
-        'name' => 'Widget Pipe',
-        'category' => 'pipe',
-        'price' => 34.99,
-        'description' => 'Hand-blown glass pipe with unique fidget-inspired design'
-    ],
-    [
-        'id' => 7,
-        'name' => 'Complete Starter Kit',
-        'category' => 'grinder',
-        'price' => 59.99,
-        'description' => 'Everything you need: grinder, tray, storage, papers, and lighter'
-    ],
-    [
-        'id' => 8,
-        'name' => 'Mini Travel Kit',
-        'category' => 'storage',
-        'price' => 39.99,
-        'description' => 'Compact travel kit with grinder and smell-proof storage'
-    ]
-];
+$pageTitle = 'Products';
+$products = getProducts();
 ?>
 
 <?php include 'includes/header.php'; ?>
@@ -83,10 +26,15 @@ $products = [
         </div>
 
         <div class="products-grid">
-            <?php foreach ($products as $product): ?>
+            <?php foreach ($products as $product):
+                $imagePath = getProductImagePath($product['image']);
+                $isPlaceholder = strpos($imagePath, 'placeholder') !== false;
+            ?>
             <div class="product-card" data-category="<?php echo htmlspecialchars($product['category']); ?>">
-                <div class="product-image-placeholder">
-                    <span><?php echo htmlspecialchars($product['name']); ?></span>
+                <div class="product-image">
+                    <img src="<?php echo htmlspecialchars($imagePath); ?>"
+                         alt="<?php echo htmlspecialchars($product['name']); ?>"
+                         class="<?php echo $isPlaceholder ? 'placeholder' : ''; ?>">
                 </div>
                 <div class="product-info">
                     <h3><?php echo htmlspecialchars($product['name']); ?></h3>

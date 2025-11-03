@@ -1,6 +1,9 @@
 <?php
 require_once 'config.php';
+require_once 'includes/products-data.php';
+
 $pageTitle = 'Home';
+$featuredProducts = array_slice(getProducts(), 0, 4); // Get first 4 products
 ?>
 
 <?php include 'includes/header.php'; ?>
@@ -51,38 +54,23 @@ $pageTitle = 'Home';
     <div class="container">
         <h2>Featured Products</h2>
         <div class="products-grid">
+            <?php foreach ($featuredProducts as $product):
+                $imagePath = getProductImagePath($product['image']);
+                $isPlaceholder = strpos($imagePath, 'placeholder') !== false;
+            ?>
             <div class="product-card">
-                <div class="product-image-placeholder">
-                    <span>Premium Grinder</span>
+                <div class="product-image">
+                    <img src="<?php echo htmlspecialchars($imagePath); ?>"
+                         alt="<?php echo htmlspecialchars($product['name']); ?>"
+                         class="<?php echo $isPlaceholder ? 'placeholder' : ''; ?>">
                 </div>
-                <h3>Spinner Grinder</h3>
-                <p>4-piece grinder with fidget spinner top</p>
-                <p class="price">$29.99</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image-placeholder">
-                    <span>Rolling Tray</span>
+                <div class="product-info">
+                    <h3><?php echo htmlspecialchars($product['name']); ?></h3>
+                    <p><?php echo htmlspecialchars($product['description']); ?></p>
+                    <p class="price">$<?php echo number_format($product['price'], 2); ?></p>
                 </div>
-                <h3>Widget Rolling Tray</h3>
-                <p>Large rolling tray with built-in storage</p>
-                <p class="price">$24.99</p>
             </div>
-            <div class="product-card">
-                <div class="product-image-placeholder">
-                    <span>Storage Container</span>
-                </div>
-                <h3>Airtight Storage</h3>
-                <p>Premium smell-proof container</p>
-                <p class="price">$19.99</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image-placeholder">
-                    <span>Accessory Kit</span>
-                </div>
-                <h3>Complete Kit</h3>
-                <p>Everything you need in one package</p>
-                <p class="price">$59.99</p>
-            </div>
+            <?php endforeach; ?>
         </div>
         <div class="text-center">
             <a href="/products.php" class="btn btn-primary">View All Products</a>
