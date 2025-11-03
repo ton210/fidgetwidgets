@@ -1,0 +1,40 @@
+# Fidget Widgets - Git Ignore
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+error.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Environment files (if added later)
+.env
+.env.local
+
+# Database
+*.sql
+*.sqlite
+
+# Vendor directories (if using Composer)
+vendor/
+
+# Generated images (optional - uncomment if you want to ignore generated images)
+# assets/images/generated/
+
+# Cache
+cache/
+tmp/
