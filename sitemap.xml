@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.fidget-widgets.com/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/index.html</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://www.fidget-widgets.com/products.html</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/about.html</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/contact.html</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/sitemap.html</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Product Images -->
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/spinner-grinder-pro.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/widget-rolling-tray.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/airtight-storage.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/fidget-papers.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/spinner-lighter.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/widget-pipe.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/complete-starter-kit.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/mini-travel-kit.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/mega-grinder-xl.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/glass-jar-storage-set.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/bamboo-rolling-tray.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/spinner-ashtray.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/pre-roll-tube-pack.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/complete-cleaning-kit.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/magnetic-led-rolling-tray.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/uv-stash-box.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/products/fidget-widget-bong.jpg</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Logo -->
+  <url>
+    <loc>https://www.fidget-widgets.com/assets/images/logo.webp</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>

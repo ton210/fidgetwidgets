@@ -1,0 +1,19 @@
+# Fidget Widgets - Robots.txt
+# https://www.fidget-widgets.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.fidget-widgets.com/sitemap.xml
+
+# Disallow admin/backend directories (for when PHP site is deployed)
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /api/
+
+# Allow all assets
+Allow: /assets/
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
