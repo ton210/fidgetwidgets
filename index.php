@@ -59,16 +59,18 @@ $featuredProducts = array_slice(getProducts(), 0, 4); // Get first 4 products
                 $isPlaceholder = strpos($imagePath, 'placeholder') !== false;
             ?>
             <div class="product-card">
-                <div class="product-image">
-                    <img src="<?php echo htmlspecialchars($imagePath); ?>"
-                         alt="<?php echo htmlspecialchars($product['name']); ?>"
-                         class="<?php echo $isPlaceholder ? 'placeholder' : ''; ?>">
-                </div>
-                <div class="product-info">
-                    <h3><?php echo htmlspecialchars($product['name']); ?></h3>
-                    <p><?php echo htmlspecialchars($product['description']); ?></p>
-                    <p class="price">$<?php echo number_format($product['price'], 2); ?></p>
-                </div>
+                <a href="/product.php?slug=<?php echo htmlspecialchars($product['slug']); ?>">
+                    <div class="product-image">
+                        <img src="<?php echo htmlspecialchars($imagePath); ?>"
+                             alt="<?php echo htmlspecialchars($product['name']); ?>"
+                             class="<?php echo $isPlaceholder ? 'placeholder' : ''; ?>">
+                    </div>
+                    <div class="product-info">
+                        <h3><?php echo htmlspecialchars($product['name']); ?></h3>
+                        <p><?php echo htmlspecialchars($product['description']); ?></p>
+                        <p class="price">$<?php echo number_format($product['price'], 2); ?></p>
+                    </div>
+                </a>
             </div>
             <?php endforeach; ?>
         </div>

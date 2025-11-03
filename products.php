@@ -31,16 +31,24 @@ $products = getProducts();
                 $isPlaceholder = strpos($imagePath, 'placeholder') !== false;
             ?>
             <div class="product-card" data-category="<?php echo htmlspecialchars($product['category']); ?>">
-                <div class="product-image">
-                    <img src="<?php echo htmlspecialchars($imagePath); ?>"
-                         alt="<?php echo htmlspecialchars($product['name']); ?>"
-                         class="<?php echo $isPlaceholder ? 'placeholder' : ''; ?>">
-                </div>
+                <a href="/product.php?slug=<?php echo htmlspecialchars($product['slug']); ?>">
+                    <div class="product-image">
+                        <img src="<?php echo htmlspecialchars($imagePath); ?>"
+                             alt="<?php echo htmlspecialchars($product['name']); ?>"
+                             class="<?php echo $isPlaceholder ? 'placeholder' : ''; ?>">
+                    </div>
+                    <div class="product-info">
+                        <h3><?php echo htmlspecialchars($product['name']); ?></h3>
+                        <p><?php echo htmlspecialchars($product['description']); ?></p>
+                        <p class="price">$<?php echo number_format($product['price'], 2); ?></p>
+                    </div>
+                </a>
                 <div class="product-info">
-                    <h3><?php echo htmlspecialchars($product['name']); ?></h3>
-                    <p><?php echo htmlspecialchars($product['description']); ?></p>
-                    <p class="price">$<?php echo number_format($product['price'], 2); ?></p>
-                    <button class="btn btn-primary">Add to Cart</button>
+                    <form method="POST" action="/cart.php" style="display: inline;">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                    </form>
                 </div>
             </div>
             <?php endforeach; ?>

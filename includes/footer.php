@@ -13,6 +13,8 @@
                         <li><a href="/products.php">Products</a></li>
                         <li><a href="/about.php">About Us</a></li>
                         <li><a href="/contact.php">Contact</a></li>
+                        <li><a href="/cart.php">Cart</a></li>
+                        <li><a href="/sitemap.php">Sitemap</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -34,6 +36,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; <?php echo date('Y'); ?> Fidget Widgets. All rights reserved. | Must be 21+ to purchase.</p>
+                <p class="footer-promo">Get amazing <a href="https://munchmakers.com/product-category/custom-rolling-trays/" target="_blank" rel="noopener">custom rolling trays</a> at MunchMakers.</p>
             </div>
         </div>
     </footer>
